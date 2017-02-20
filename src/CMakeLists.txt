@@ -161,9 +161,7 @@ set( ELASTIX_USER_COMPONENT_DIRS "" CACHE PATH
 #---------------------------------------------------------------------
 # elastix depends on some ITK settings
 
-if( NOT ITKReview_LOADED )
-  message( SEND_ERROR "Module_ITKReview has not been set to ON when compiling ITK. This option is mandatory for elastix to build.\nPlease recompile your ITK installation." )
-endif()
+# TODO: Update checks for SimpleElastix
 
 #---------------------------------------------------------------------
 # If IDE supports it, do use folder view.
